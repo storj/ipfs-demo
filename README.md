@@ -19,7 +19,7 @@ The command will return a JSON response with the hash of the uploaded file on th
 Example:
 
 ```
-curl -u admin:mypass -X POST -F "file=@/home/kaloyan/Pictures/Storj Logomark - Color-1064x1200-369e5a5.png" "https://ipfs-demo.dev.storj.io:5443/api/v0/add"
+curl -X POST -F "file=@/home/kaloyan/Pictures/Storj Logomark - Color-1064x1200-369e5a5.png" "https://ipfs-demo.dev.storj.io:5443/api/v0/add"
 ```
 
 ```json
