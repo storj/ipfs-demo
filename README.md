@@ -12,19 +12,17 @@ Execute the following command in your Terminal.
 curl -X POST -F "file=@myfile" "https://ipfs-demo.dev.storj.io:5443/api/v0/add"
 ```
 
-Replace `myfile` with the path to your file on the local file system. Keep the `@` character in front of the file path. Uploads are limited to 64 MB.
-
-The command will return a JSON response with the hash of the uploaded file on the IPFS network.
+Replace `myfile` with the path to your file on the local file system. Keep the `@` character in front of the file path. Uploads are limited to 64 MB. The command will return a JSON response with the hash of the uploaded file on the IPFS network.
 
 Example:
 
 ```
-curl -X POST -F "file=@/home/kaloyan/Pictures/Storj Logomark - Color-1064x1200-369e5a5.png" "https://ipfs-demo.dev.storj.io:5443/api/v0/add"
+curl -X POST -F "file=@/home/demo/storj-logo.png" "https://ipfs-demo.dev.storj.io:5443/api/v0/add"
 ```
 
 ```json
 {
-    "Name": "Storj Logomark - Color-1064x1200-369e5a5.png",
+    "Name": "storj-logo.png",
     "Hash": "QmWT7d4MAvva7uLoTRh8i7GiMSZUDND4Z5xNo5LCQeUrYh",
     "Size": "131539"
 }
